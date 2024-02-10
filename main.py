@@ -1,6 +1,5 @@
 import os
 import time
-from spot_controller import SpotController
 
 from  pycreate2 import Create2
 import time
