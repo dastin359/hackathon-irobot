@@ -21,7 +21,7 @@ def launch_irobot():
     
     # directly set the motor speeds ... move forward
     bot.drive_direct(100, 100)
-    time.sleep(2)
+    time.sleep(5)
     
     # turn in place
     bot.drive_direct(200,-200)  # inputs for motors are +/- 500 max
@@ -63,8 +63,8 @@ def main():
 if __name__ == '__main__':
     import cv2
     camera_capture = cv2.VideoCapture(0)
-    rv, image = camera_capture.read()
-    print(f"Image Dimensions: {image.shape}")
-    camera_capture.release()
-    main()
-    # launch_irobot()
+    # rv, image = camera_capture.read()
+    # print(f"Image Dimensions: {image.shape}")
+    # camera_capture.release()
+    # main()
+    launch_irobot()
