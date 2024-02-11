@@ -63,7 +63,10 @@ def main():
 if __name__ == '__main__':
 
     import subprocess
-    result = subprocess.run(['htop'], stdout=subprocess.PIPE)
+    result = subprocess.run(['lscpu'], stdout=subprocess.PIPE)
+    print(result.stdout.decode('utf-8'))
+
+    result = subprocess.run(['nvidia-smi'], stdout=subprocess.PIPE)
     print(result.stdout.decode('utf-8'))
 
     import cv2
