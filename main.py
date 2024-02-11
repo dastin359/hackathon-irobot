@@ -61,6 +61,11 @@ def main():
     # launch_irobot()
 
 if __name__ == '__main__':
+
+    import subprocess
+    result = subprocess.run(['htop'], stdout=subprocess.PIPE)
+    print(result.stdout.decode('utf-8'))
+
     import cv2
     print(200)
     camera_capture = cv2.VideoCapture(0)
