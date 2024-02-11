@@ -63,9 +63,9 @@ def main():
 if __name__ == '__main__':
     import cv2
     print(200)
-    # camera_capture = cv2.VideoCapture(0)
-    # rv, image = camera_capture.read()
-    # print(f"Image Dimensions: {image.shape}")
-    # camera_capture.release()
+    camera_capture = cv2.VideoCapture(0)
+    rv, image = camera_capture.read()
+    print(f"Image Dimensions: {image.shape}")
+    camera_capture.release()
     # main()
     # launch_irobot()
