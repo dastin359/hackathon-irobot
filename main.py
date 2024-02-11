@@ -32,6 +32,7 @@ def launch_irobot():
     
     # query some sensors
     sensors = bot.get_sensors()  # returns all data
+    print(sensors)
     print(sensors.light_bumper_left)
     
     # Close the connection
@@ -61,10 +62,9 @@ def main():
     # launch_irobot()
 
 if __name__ == '__main__':
-
-    import subprocess
-    result = subprocess.run(['lscpu'], stdout=subprocess.PIPE)
-    print(result.stdout.decode('utf-8'))
+    # import subprocess
+    # result = subprocess.run(['lscpu'], stdout=subprocess.PIPE)
+    # print(result.stdout.decode('utf-8'))
 
     # result = subprocess.run(['nvidia-smi'], stdout=subprocess.PIPE)
     # print(result.stdout.decode('utf-8'))
