@@ -20,12 +20,12 @@ def launch_irobot():
     # bot.full()
     
     # directly set the motor speeds ... move forward
-    bot.drive_direct(100, 100)
-    time.sleep(5)
+    # bot.drive_direct(100, 100)
+    # time.sleep(5)
     
     # turn in place
-    bot.drive_direct(200,0)  # inputs for motors are +/- 500 max
-    time.sleep(2)
+    bot.drive_direct(100,0)  # inputs for motors are +/- 500 max
+    time.sleep(10)
     
     # Stop the bot
     bot.drive_stop()
