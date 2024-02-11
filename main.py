@@ -66,8 +66,8 @@ if __name__ == '__main__':
     result = subprocess.run(['lscpu'], stdout=subprocess.PIPE)
     print(result.stdout.decode('utf-8'))
 
-    result = subprocess.run(['nvidia-smi'], stdout=subprocess.PIPE)
-    print(result.stdout.decode('utf-8'))
+    # result = subprocess.run(['nvidia-smi'], stdout=subprocess.PIPE)
+    # print(result.stdout.decode('utf-8'))
 
     import cv2
     print(200)
@@ -76,4 +76,4 @@ if __name__ == '__main__':
     print(f"Image Dimensions: {image.shape}")
     camera_capture.release()
     # main()
-    # launch_irobot()
+    launch_irobot()
