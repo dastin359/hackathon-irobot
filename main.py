@@ -17,7 +17,7 @@ def launch_irobot():
     
     # You are responsible for handling issues, no protection/safety in
     # this mode ... becareful
-    bot.full()
+    # bot.full()
     
     # directly set the motor speeds ... move forward
     bot.drive_direct(100, 100)
@@ -61,4 +61,5 @@ def main():
     launch_irobot()
 
 if __name__ == '__main__':
-    main()
+    # main()
+    launch_irobot()
