@@ -24,7 +24,7 @@ def launch_irobot():
     time.sleep(5)
     
     # turn in place
-    bot.drive_direct(200,-200)  # inputs for motors are +/- 500 max
+    bot.drive_direct(200,0)  # inputs for motors are +/- 500 max
     time.sleep(2)
     
     # Stop the bot
